@@ -70,8 +70,7 @@ const Header = ({ value, translate, english, setUrdu, load, result, task, setTas
                 </button>
               </div>
         }
-        
-      </div>
+           </div>
       <footer>
           <p className="montserrat-body">Built with React, FastAPI, LangChain & OpenRouter </p> 
         </footer>
