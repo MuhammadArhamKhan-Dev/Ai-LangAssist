@@ -13,7 +13,7 @@ function App() {
   const translate = async () => {
     setResult(true);
     setLoad(true);
-    const res = await fetch("http://127.0.0.1:8000/translate", {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/translate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
