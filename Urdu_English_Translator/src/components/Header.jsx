@@ -6,8 +6,8 @@ const Header = () => {
 
   return (
       
-      <header>
-        <nav>
+      <header className={styles.headerContainer}>
+        <nav className = {styles.navContainer}>
           <h2 className="montserrat-heading">
             AI LangAssist
           </h2>
