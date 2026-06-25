@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
+import "./App.css";
 
 function App() {
 
@@ -38,9 +41,11 @@ function App() {
   }
 
   return (
-
-    <Header value={urdu} copy = {copy} copyText = {copyText} translate={translate} english={english} setUrdu={setUrdu} load={load} result={result} task={task} setTask={setTask} />
-
+    <div className="app">
+    <Header />
+    <Main value={urdu} translate={translate} english={english} setUrdu={setUrdu} load={load} result={result} task={task} setTask={setTask} copy={copy} copyText={copyText}/>
+    <Footer />
+    </div>
   );
 }
 
